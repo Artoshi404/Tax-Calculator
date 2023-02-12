@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator | Pure JavaScript</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="form-input">
+            <h3>โปรแกรมคำนวณภาษีเงินได้บุคคลธรรมดา (แบบง่ายๆ)</h3>
+          <div>
+            <label for="income">เงินได้ทั้งปี:</label>
+            <input type="number" id="income" />
+          </div>
+          <div>
+            <label for="expenses">หักค่าใช้จ่าย:</label>
+            <input type="number" id="expenses" />
+          </div>
+          <div>
+            <label for="deductions">ค่าลดหย่อน:</label>
+            <input type="number" id="deductions" />
+          </div>
+          <button id="calculate-btn" onclick="calculateTax()">คำนวณภาษี</button>
+          <div id="net-income"></div>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
